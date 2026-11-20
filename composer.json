@@ -1,0 +1,57 @@
+{
+    "name": "franciscodlxdev/nativephp-social-login",
+    "description": "Social login for NativePHP Mobile: OAuth 2.0 + PKCE in the system browser (ASWebAuthenticationSession, Custom Tabs) with LinkedIn, X, Mercado Libre, Twitch, GitHub, Discord, Slack, Strava, Telegram and TikTok. No client secret in the app.",
+    "type": "nativephp-plugin",
+    "license": "MIT",
+    "keywords": ["nativephp", "nativephp-plugin", "laravel", "oauth", "oauth2", "pkce", "oidc", "social-login"],
+    "homepage": "https://github.com/franciscodlx/nativephp-social-login",
+    "authors": [
+        {
+            "name": "Francisco",
+            "homepage": "https://github.com/franciscodlx"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/cache": "^11.0|^12.0|^13.0",
+        "illuminate/console": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "nativephp/mobile": "^3.0|^4.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Franciscodlxdev\\SocialLogin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Franciscodlxdev\\SocialLogin\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Franciscodlxdev\\SocialLogin\\SocialLoginServiceProvider"
+            ],
+            "aliases": {
+                "SocialLogin": "Franciscodlxdev\\SocialLogin\\Facades\\SocialLogin"
+            }
+        },
+        "nativephp": {
+            "manifest": "nativephp.json"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
