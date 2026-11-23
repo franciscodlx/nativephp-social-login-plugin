@@ -1,5 +1,7 @@
 # franciscodlxdev/nativephp-social-login
 
+<p align="center"><img src="https://raw.githubusercontent.com/franciscodlx/nativephp-social-login/main/.github/assets/demo.gif" width="260" alt="Demo: iniciar sesión en el navegador del sistema y volver a la app"></p>
+
 Login social para [NativePHP Mobile](https://nativephp.com) (iOS, Android) con OAuth 2.0 + PKCE en el navegador del sistema: `ASWebAuthenticationSession` en iOS y Custom Tabs en Android. Sin WebView y sin `client_secret` en la app. Incluye LinkedIn, X, Mercado Libre, Twitch, GitHub, Discord, Slack, Strava, Telegram y TikTok.
 
 Es la versión para NativePHP de la familia de [React Native](https://github.com/franciscodlx/rn-social-login), [Flutter](https://github.com/franciscodlx/flutter_social_login), [Capacitor](https://github.com/franciscodlx/capacitor-social-login) y [NativeScript](https://github.com/franciscodlx/nativescript-social-login): mismo flujo, mismos códigos de error.
